@@ -31,3 +31,11 @@ body {
   margin: 0 auto;
   padding: var(--space-6);
 }
+
+.messages__archive {
+  width: var(--space-6);
+  height: var(--space-6);
+  border: 0;
+  background: url('/archive.svg') center / var(--space-4) no-repeat;
+  cursor: pointer;
+}

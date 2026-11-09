@@ -13,6 +13,7 @@ export function Messages() {
                 {m.unread && <Badge tone="critical">New</Badge>}
                 <Link href={`#messages/${m.id}`}>{m.subject}</Link>
                 <Text as="span" tone="muted" size="small">{m.from} · {m.received}</Text>
+                <button className="messages__archive" onClick={() => console.log('archive', m.id)} />
               </Stack>
             ))}
           </Stack>
