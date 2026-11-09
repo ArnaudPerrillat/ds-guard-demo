@@ -11,10 +11,11 @@ body {
   align-items: center;
   padding: var(--space-3) var(--space-6);
   background: var(--color-bg-default);
-  border-bottom: 3px solid var(--color-brand-legacy);
+  border-bottom: 3px solid var(--color-bg-accent);
 }
 
 .app__brand {
+  font-size: var(--font-size-large);
   font-weight: 700;
   color: var(--color-fg-accent);
 }

@@ -4,14 +4,14 @@ import styles from './Prescriptions.module.css'
 
 export function Prescriptions() {
   return (
-    <Stack gap="medium">
+    <Stack gap="normal">
       <Heading level={1}>Prescriptions</Heading>
       <ul className={styles.list}>
         {prescriptions.map((p) => (
           <li key={p.id} className={styles.item}>
             <div>
               <Text>{p.name}</Text>
-              <Text tone="muted" size="small">{p.dosage}</Text>
+              <Text tone="muted">{p.dosage}</Text>
             </div>
             <div className={styles.meta}>
               <Badge tone={p.refillsLeft ? 'neutral' : 'attention'}>{p.refillsLeft} refills left</Badge>

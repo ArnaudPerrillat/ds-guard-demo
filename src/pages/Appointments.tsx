@@ -3,7 +3,7 @@ import { appointments } from '../data'
 
 export function Appointments() {
   return (
-    <Stack gap="medium">
+    <Stack gap="normal">
       <Heading level={1}>Appointments</Heading>
       {appointments.map((a) => (
         <Card key={a.id}>
@@ -12,9 +12,9 @@ export function Appointments() {
             <Badge tone={a.status === 'confirmed' ? 'success' : 'attention'}>{a.status === 'confirmed' ? 'Confirmed' : 'Pending'}</Badge>
           </Card.Header>
           <Card.Body>
-            <Stack gap="small">
-              <Text size="small" tone="muted">{a.when} · {a.place}</Text>
-              <Stack direction="horizontal" gap="small">
+            <Stack gap="condensed">
+              <Text tone="muted">{a.when} · {a.place}</Text>
+              <Stack direction="horizontal" gap="condensed">
                 <Button>Reschedule</Button>
                 <Button variant="danger">Cancel</Button>
               </Stack>
