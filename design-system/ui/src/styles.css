@@ -37,9 +37,9 @@
 .orv-stack--horizontal { flex-direction: row; flex-wrap: wrap; }
 .orv-stack--align-center { align-items: center; }
 .orv-stack--align-end { align-items: flex-end; }
-.orv-stack--gap-small { gap: var(--space-2); }
-.orv-stack--gap-medium { gap: var(--space-4); }
-.orv-stack--gap-large { gap: var(--space-8); }
+.orv-stack--gap-condensed { gap: var(--space-2); }
+.orv-stack--gap-normal { gap: var(--space-4); }
+.orv-stack--gap-spacious { gap: var(--space-8); }
 
 .orv-badge { display: inline-block; font-size: var(--font-size-small); padding: 0 var(--space-2); border-radius: var(--radius-full); background: var(--color-bg-subtle); }
 .orv-badge--success { background: var(--color-bg-success); color: var(--color-fg-success); }

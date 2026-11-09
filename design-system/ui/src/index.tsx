@@ -38,6 +38,7 @@ export function IconButton({ icon, variant = 'ghost', className, ...rest }: Icon
 export interface TextProps extends BaseProps {
   as?: 'p' | 'span' | 'label'
   tone?: 'default' | 'muted' | 'critical' | 'success'
+  /** @deprecated Typography sizes come from the role: use `Heading`, or `tone` for emphasis. Removed in 3.0. */
   size?: 'small' | 'body' | 'large'
 }
 export function Text({ as: Tag = 'p', tone = 'default', size = 'body', className, children }: TextProps) {
@@ -94,17 +95,12 @@ function CardBody({ className, children }: BaseProps) {
 export const Card: typeof CardRoot & { Header: typeof CardHeader; Body: typeof CardBody } = Object.assign(CardRoot, { Header: CardHeader, Body: CardBody })
 
 export interface StackProps extends BaseProps {
-  gap?: 'none' | 'small' | 'medium' | 'large'
+  gap?: 'none' | 'condensed' | 'normal' | 'spacious'
   direction?: 'vertical' | 'horizontal'
   align?: 'start' | 'center' | 'end'
 }
-export function Stack({ gap = 'medium', direction = 'vertical', align = 'start', className, children }: StackProps) {
+export function Stack({ gap = 'normal', direction = 'vertical', align = 'start', className, children }: StackProps) {
   return <div className={cx('orv-stack', `orv-stack--${direction}`, `orv-stack--gap-${gap}`, `orv-stack--align-${align}`, className)}>{children}</div>
-}
-
-/** @deprecated Use `Stack` instead. Removed in 2.0. */
-export function Box({ padding = 0, children }: BaseProps & { padding?: number }) {
-  return <div style={{ padding }}>{children}</div>
 }
 
 export interface BadgeProps extends BaseProps {

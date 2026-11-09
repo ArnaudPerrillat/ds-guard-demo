@@ -1,8 +1,14 @@
 {
   "name": "@orvella/tokens",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "Orvella design tokens (DTCG) and CSS custom properties. Fictional design system for the DS Guard demo.",
   "license": "MIT",
-  "files": ["tokens.json", "tokens.css"],
-  "exports": { "./tokens.json": "./tokens.json", "./tokens.css": "./tokens.css" }
+  "files": [
+    "tokens.json",
+    "tokens.css"
+  ],
+  "exports": {
+    "./tokens.json": "./tokens.json",
+    "./tokens.css": "./tokens.css"
+  }
 }
