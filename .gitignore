@@ -1,0 +1,5 @@
+node_modules/
+dist/
+design-system/ui/dist/
+.ds-guard/
+ds-guard-report/

@@ -1,0 +1,22 @@
+.billing {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.billing__title {
+  font-size: 1.75rem;
+  margin: 0 0 16px;
+}
+
+.billing__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.billing__table td,
+.billing__table th {
+  padding: 8px 12px;
+  border-bottom: 1px solid #dde1e7;
+  text-align: left;
+}

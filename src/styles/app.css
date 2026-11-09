@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--color-bg-subtle);
+  color: var(--color-fg-default);
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-bg-default);
+  border-bottom: 3px solid var(--color-brand-legacy);
+}
+
+.app__brand {
+  font-weight: 700;
+  color: var(--color-fg-accent);
+}
+
+.app__nav {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-bg-default);
+}
+
+.app__main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--space-6);
+}

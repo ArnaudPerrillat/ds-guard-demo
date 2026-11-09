@@ -1,0 +1,25 @@
+{
+  "name": "orvella-patient-portal",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Fictional patient portal used to demo DS Guard. No real data, no real company.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "ds:pack": "node scripts/pack-ds.mjs"
+  },
+  "dependencies": {
+    "@orvella/tokens": "file:vendor/orvella-tokens-1.4.0.tgz",
+    "@orvella/ui": "file:vendor/orvella-ui-1.4.0.tgz",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0"
+  }
+}

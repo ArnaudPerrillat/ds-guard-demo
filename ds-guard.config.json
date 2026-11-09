@@ -1,0 +1,5 @@
+{
+  "designSystems": [{ "package": "@orvella/ui", "tokens": ["@orvella/tokens/tokens.json"] }],
+  "include": ["src/**/*.{tsx,jsx,ts,js,css,scss}"],
+  "blocking": ["a11y-img-alt", "a11y-accessible-name", "a11y-no-positive-tabindex"]
+}

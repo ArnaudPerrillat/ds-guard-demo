@@ -1,0 +1,9 @@
+# Intentional exceptions: a deviation someone owns and has dated.
+# An expired exception stops covering its findings: they count again.
+exceptions:
+  - id: EXC-001
+    rules: [no-hardcoded-color, no-hardcoded-spacing, no-hardcoded-radius, no-hardcoded-font-size]
+    reason: Legacy billing screen, to be rewritten with the design system in Q4 2026.
+    owner: "@billing-team"
+    expires: 2026-10-31
+    files: ["src/legacy/billing/**"]
