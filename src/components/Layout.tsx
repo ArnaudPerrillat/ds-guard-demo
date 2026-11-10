@@ -15,9 +15,9 @@ export function Layout({ current, children }: { current: PageId; children: React
   return (
     <div className="app">
       <header className="app__header">
-        <Text as="span" size="large" className="app__brand">Orvella</Text>
-        <Stack direction="horizontal" gap="small" align="center">
-          <Text as="span" tone="muted" size="small">Sam Taylor</Text>
+        <Text as="span" className="app__brand">Orvella</Text>
+        <Stack direction="horizontal" gap="condensed" align="center">
+          <Text as="span" tone="muted">Sam Taylor</Text>
           <Avatar src="./avatar.svg" alt="Your profile picture" size="small" />
         </Stack>
       </header>
