@@ -5,6 +5,7 @@ export function Appointments() {
   return (
     <Stack gap="medium">
       <Heading level={1}>Appointments</Heading>
+      <img src="./clinic.svg" className="appointments__map" />
       {appointments.map((a) => (
         <Card key={a.id}>
           <Card.Header>
