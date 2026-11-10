@@ -1,12 +1,13 @@
 import { Banner, Button, Card, Heading, Stack, Text } from '@orvella/ui'
 import { appointments, messages } from '../data'
+import { WelcomeHero } from '../components/WelcomeHero'
 
 export function Home() {
   const next = appointments[0]!
   const unread = messages.filter((m) => m.unread).length
   return (
     <Stack gap="large">
-      <Heading level={1}>Good morning, Sam</Heading>
+      <WelcomeHero name="Sam" />
       <Banner title="Flu vaccination season">Book a slot at your clinic before the end of November.</Banner>
       <Stack direction="horizontal" gap="medium">
         <Card elevation="raised">

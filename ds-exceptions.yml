@@ -7,3 +7,8 @@ exceptions:
     owner: "@billing-team"
     expires: 2026-10-31
     files: ["src/legacy/billing/**"]
+  - id: EXC-002
+    rules: [no-hardcoded-spacing]
+    reason: The seasonal welcome banner uses an off-scale 72px vertical spacing, approved in design review.
+    owner: "@care-journey"
+    expires: 2027-03-31
