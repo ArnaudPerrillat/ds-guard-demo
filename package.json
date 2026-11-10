@@ -10,8 +10,8 @@
     "ds:pack": "node scripts/pack-ds.mjs"
   },
   "dependencies": {
-    "@orvella/tokens": "file:vendor/orvella-tokens-1.4.0.tgz",
-    "@orvella/ui": "file:vendor/orvella-ui-1.4.0.tgz",
+    "@orvella/tokens": "file:vendor/orvella-tokens-2.0.0.tgz",
+    "@orvella/ui": "file:vendor/orvella-ui-2.0.0.tgz",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
