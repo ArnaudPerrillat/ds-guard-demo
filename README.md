@@ -1,6 +1,6 @@
 # Orvella patient portal — DS Guard demo
 
-A **fictional** patient portal (appointments, prescriptions, messages, billing) and its small design system, used to show [DS Guard](https://github.com/OWNER/ds-guard) on real pull requests. No real data, no real company, practitioner or place: every name here is a placeholder.
+A **fictional** patient portal (appointments, prescriptions, messages, billing) and its small design system, used to show [DS Guard](https://github.com/ArnaudPerrillat/ds-guard) on real pull requests. No real data, no real company, practitioner or place: every name here is a placeholder.
 
 ## What is in the repository
 

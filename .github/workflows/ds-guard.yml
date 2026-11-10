@@ -12,5 +12,4 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: npm ci
-      # Replace OWNER with the GitHub account hosting the ds-guard repository.
-      - uses: OWNER/ds-guard@main
+      - uses: ArnaudPerrillat/ds-guard@main
