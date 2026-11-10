@@ -31,3 +31,12 @@ body {
   margin: 0 auto;
   padding: var(--space-6);
 }
+
+.reminder__confirm {
+  font: inherit;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #3b45c4;
+  color: #ffffff;
+}

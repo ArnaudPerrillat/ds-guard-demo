@@ -1,5 +1,6 @@
 import { Banner, Button, Card, Heading, Stack, Text } from '@orvella/ui'
 import { appointments, messages } from '../data'
+import { AppointmentReminder } from '../components/AppointmentReminder'
 
 export function Home() {
   const next = appointments[0]!
@@ -7,6 +8,7 @@ export function Home() {
   return (
     <Stack gap="large">
       <Heading level={1}>Good morning, Sam</Heading>
+      <AppointmentReminder what={next.with} when={next.when} />
       <Banner title="Flu vaccination season">Book a slot at your clinic before the end of November.</Banner>
       <Stack direction="horizontal" gap="medium">
         <Card elevation="raised">
